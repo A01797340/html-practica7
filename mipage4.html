@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi análisis de texto</title>
+
+    <style>
+        /*
+          ESTILOS INTERNOS
+          Aquí puedes modificar colores, tipografía y espaciados sin usar un archivo CSS aparte.
+        */
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #f6f3ee; /* color de fondo suave */
+            color: #2f2f2f;
+            line-height: 1.7;
+        }
+
+        /*
+          CONTENEDOR PRINCIPAL
+          Ayuda a centrar el contenido y a que la lectura sea más cómoda.
+        */
+        .contenedor {
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 40px 28px;
+            border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Encabezado principal */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 18px;
+            border-bottom: 2px solid #ddd6cb;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.3rem;
+            color: #4a3f35;
+        }
+
+        .intro {
+            margin-top: 14px;
+            font-size: 1.08rem;
+        }
+
+        /* Enlace externo con estilo de botón suave */
+        .boton-enlace {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 18px;
+            background-color: #e7dfd3;
+            color: #3b322a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .boton-enlace:hover {
+            background-color: #d9cfbf;
+        }
+
+        /* Imagen de Picsum */
+        .imagen {
+            display: block;
+            width: 100%;
+            max-width: 820px;
+            margin: 28px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+        }
+
+        /* Sección donde vive el iframe */
+        .bloque-iframe {
+            margin-top: 24px;
+            padding: 16px;
+            background-color: #fbfaf8;
+            border: 1px solid #e3ddd3;
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: #4a3f35;
+            margin-top: 0;
+        }
+
+        /* Pie de página */
+        footer {
+            margin-top: 34px;
+            padding-top: 18px;
+            text-align: center;
+            border-top: 1px solid #ddd6cb;
+            color: #6a625a;
+            font-size: 0.96rem;
+        }
+    </style>
+</head>
+<body>
+    <!--
+      Esta es la estructura principal de la página.
+      Todo el contenido visible está dentro de este contenedor.
+    -->
+    <div class="contenedor">
+
+        <!-- Encabezado con el título y un texto introductorio -->
+        <header>
+            <h1>Mi análisis de texto</h1>
+            <p class="intro">
+                Esta página muestra un ejemplo <strong>sencillo</strong> de presentación para un recurso de
+                <em>análisis textual digital</em> con una apariencia limpia y agradable.
+            </p>
+
+            <!-- Enlace externo. target="_blank" hace que se abra en otra pestaña. -->
+            <a class="boton-enlace" href="https://www-qualtrics-com.translate.goog/articles/strategy-research/text-analysis/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc" target="_blank" rel="noopener noreferrer">
+                Visitar sitio externo
+            </a>
+        </header>
+
+        <!--
+          Imagen de ejemplo tomada de Picsum.
+          Puedes cambiar las medidas del enlace si quieres otra proporción.
+        -->
+        <img
+            class="imagen"
+            src="https://picsum.photos/900/380"
+            alt="Imagen ilustrativa obtenida desde Picsum"
+        >
+
+        <!-- Sección con el iframe de Voyant Tools -->
+        <section class="bloque-iframe">
+            <h2>Visualización interactiva</h2>
+            <p>
+                Debajo aparece el recurso embebido de <strong>Voyant Tools</strong>, útil para explorar textos de forma
+                <em>visual e interactiva</em>.
+            </p>
+
+            <!--
+              El iframe se pega tal cual para que cargue la herramienta embebida.
+              Puedes ajustar solamente el alto si en algún momento quieres más o menos espacio visual.
+            -->
+            <iframe style='width: 100%; height: 800px;' src='https://voyant.lincsproject.ca/?panels=cirrus%2Creader%2Ctrends%2Csummary%2Ccontexts&corpus=0bf876df5740cf39b9e2de83532f21d0'></iframe>
+        </section>
+
+        <!-- Pie de página solicitado -->
+        <footer>
+            Creado por Martín García. 2026
+        </footer>
+    </div>
+</body>
+</html>
